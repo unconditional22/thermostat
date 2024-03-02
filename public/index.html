@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thermostat</title>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+        <!-- Implement Firebase Authentication -->
+        <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
+        <!-- <script src="thermostat.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="thermostat.css">
+
+
+        <script>
+            // REPLACE WITH YOUR web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "",
+                authDomain: "thermostat-c1685.firebaseapp.com", 
+                databaseURL: "https://thermostat-c1685-default-rtdb.firebaseio.com",
+                projectId: "thermostat-c1685",
+                storageBucket: "thermostat-c1685.appspot.com",
+                messagingSenderId: "881952907613",
+                appId: "1:881952907613:web:12ec9e44f6406c29cc48b4"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            var database = firebase.database();
+        </script>
+        <script src="app.js" defer></script>
+
+    </head>
+
+    <body>
+        <h1 class="titre">ThermoLIT</h1>
+
+
+        <p>
+            <span id="lire-date">YYYY-MM-DD</span>
+            <!--gauche-->
+            <span>Temperature Actuelle</span>
+            <!--droit-->
+        </p>
+
+        
+        <p>
+            <span id="lire-horaire">HH-MM</span>
+            <!--gauche-->
+            
+            <span>24 &deg;C</span>
+            <!--<h4><span id="reading-float"></span><bdi> &deg;C</bdi></h4>-->
+            <!--droit-->
+        </p>
+
+        <!--<h4 class="text">Reading float: <span id="reading-float"></span><bdi> &deg;C</bdi></h4>-->
+
+        <div class="box-temp">
+            <div class="center-temp">
+
+            <h4><span id="lire-c1"></span><bdi> &deg;C</bdi></h4>
+            <h4><span id="lire-c2"></span><bdi> &deg;C</bdi></h4>
+            <h4><span id="lire-c3"></span><bdi> &deg;C</bdi></h4>
+            <h4><span id="lire-c4"></span><bdi> &deg;C</bdi></h4>
+            <h4><span id="lire-c5"></span><bdi> &deg;C</bdi></h4>
+            </div>
+        </div>
+
+
+
+        <div class="box">
+            <div class="center">
+                <button id="active" class="allumerBtn">Consigne 1</button>
+                <button id="active" class="allumerBtn">Consigne 2</button>
+                <button id="active" class="allumerBtn">Consigne 3</button>
+                <button id="active" class="allumerBtn">Consigne 4</button>
+                <button id="active" class="allumerBtn">Consigne 5</button>
+            </div>
+        </div>
+
+        <!--
+        <div class="box-img">
+            <div class="center-img">
+                <img src="climatiseur.png" alt="Climatiseur">
+                <img src="chauffage.png" alt="Climatiseur">
+                <img src="ventillateur.png" alt="Climatiseur">
+                <img src="consigne.png" alt="Climatiseur">
+                <img src="consigne.png" alt="Climatiseur">
+
+            </div>
+        </div>
+        -->
+
+
+    </body>
+
+</html>

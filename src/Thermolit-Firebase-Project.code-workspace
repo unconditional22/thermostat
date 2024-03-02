@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\APPS\\XAMPP\\htdocs\\Firebase-Project"
+		},
+		{
+			"name": "Blink_exemple",
+			"path": "..\\..\\Blink_exemple"
+		},
+		{
+			"name": "Thermostat",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"functional": "cpp"
+		}
+	}
+}
